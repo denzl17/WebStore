@@ -9,7 +9,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\404.cshtml" />
+    <Content Remove="Views\Home\BlogSingle.cshtml" />
+    <Content Remove="Views\Home\Cart.cshtml" />
+    <Content Remove="Views\Home\Checkout.cshtml" />
+    <Content Remove="Views\Home\Contactus.cshtml" />
+    <Content Remove="Views\Home\Login.cshtml" />
+    <Content Remove="Views\Home\ProductDetails.cshtml" />
+    <Content Remove="Views\Home\Shop.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Home\404.cshtml" />
+    <None Include="Views\Home\BlogSingle.cshtml" />
+    <None Include="Views\Home\Cart.cshtml" />
+    <None Include="Views\Home\Checkout.cshtml" />
+    <None Include="Views\Home\Contactus.cshtml" />
+    <None Include="Views\Home\Login.cshtml" />
+    <None Include="Views\Home\ProductDetails.cshtml" />
+    <None Include="Views\Home\Shop.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
