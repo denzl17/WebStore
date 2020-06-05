@@ -9,17 +9,22 @@ namespace WebStore.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            //ViewBag.Title = "Hello World";
-            ViewData["Title"] = "Hello Home!";
+        public IActionResult Index() => View();
 
-            return View();
-        }
+        public IActionResult Blog() => View();
+        
+        public IActionResult BlogSingle() => View();
+        
+        public IActionResult Cart() => View();
+        
+        public IActionResult CheckOut() => View();
+        
+        public IActionResult ContactUs() => View();
+        
+        public IActionResult Login() => View();
 
-        public IActionResult AnotherAction()
-        {
-            return Content("Another action result");
-        }
+        public IActionResult ProductDetails() => View();
+
+        public IActionResult Shop() => View();
     }
 }

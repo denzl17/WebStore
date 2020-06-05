@@ -1,15 +1,19 @@
-﻿<!DOCTYPE html>
+﻿<partial name="Partial/_Slider"/>
 
-<html>
-<head>
-    <meta name="viewport" content="witdh=device-witdh" />
-    <title>Первое приложение @ViewBag.Title</title>
-</head>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <partial name="Partial/_LeftSideBar"/>
+            </div>
 
-<body>
-    <h3>Сотрудники!</h3>
+            <div class="col-sm-9 padding-right">
+                <partial name="Partial/_FeaturesItems"/>
 
-    <a asp-controller="Employees" asp-action="Index">Список</a>
+                <partial name="Partial/_CategoryTab"/>
 
-</body>
-</html>
+                <partial name="Partial/_RecomendedItems"/>
+            </div>
+        </div>
+    </div>
+</section>

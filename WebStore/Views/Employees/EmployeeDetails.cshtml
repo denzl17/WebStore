@@ -1,14 +1,6 @@
 ﻿@model WebStore.Models.Employee
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>EmployeeDetails</title>
-</head>
-<body>
-
+<div class="container">
     <h1>Информация о сотруднике id:@Model.Id</h1>
 
     <p>Фамилия: @Model.Surname</p>
@@ -22,6 +14,4 @@
 
     <hr />
     <a asp-controller="Employees" asp-action="Index">К списку сотрудников</a>
-
-</body>
-</html>
+</div>

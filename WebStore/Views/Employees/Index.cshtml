@@ -1,17 +1,11 @@
-﻿    @model IEnumerable<WebStore.Models.Employee>
+﻿@model IEnumerable<Employee>
+@{
+    ViewData["Title"] = "Index";
+}
 
-    <!DOCTYPE html>
 
-    <html>
-    <head>
-        <meta name="viewport" content="witdh=device-witdh" />
-        <title>Первое приложение @ViewBag.Title</title>
-    </head>
-
-    <body>
-        <h3>Сотрудники!</h3>
-
-        <table>
+<div class="container">
+    <table class="table">
             <thead>
                 <tr>
                     <th>id</th>
@@ -42,6 +36,4 @@
                 }
             </tbody>
         </table>
-
-    </body>
-</html>
+</div>

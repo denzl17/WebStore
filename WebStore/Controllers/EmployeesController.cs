@@ -46,6 +46,8 @@ namespace WebStore.Controllers
             },
         };
 
+        public IActionResult Index() => View(__Employees);
+
         public IActionResult EmployeeDetails(int id)
         {
             var employee = __Employees.FirstOrDefault(e => e.Id == id);
@@ -53,14 +55,6 @@ namespace WebStore.Controllers
                 return NotFound();
 
             return View(employee);
-        }
-
-        public IActionResult Index()
-        {
-            //ViewBag.Title = "Hello World";
-            ViewData["Title"] = "Hello Emp!";
-
-            return View(__Employees);
         }
     }
 }
