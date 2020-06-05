@@ -7,7 +7,7 @@ using WebStore.Models;
 
 namespace WebStore.Controllers
 {
-    public class EmpController : Controller
+    public class EmployeesController : Controller
     {
         private static readonly List<Employee> __Employees = new List<Employee>
         {
