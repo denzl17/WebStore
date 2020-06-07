@@ -14,10 +14,14 @@
     <p>Фамилия: @Model.Surname</p>
     <p>Имя: @Model.FirstName</p>
     <p>Отчество: @Model.Patronymic</p>
-    <p>Возраст:@Model.Age</p>
+    <p>Возраст: @Model.Age</p>
+
+    <p>Офис: @Model.Office</p>
+    <p>Хобби: @Model.Hobby</p>
+    <p>Дата рождения: @Model.Birthdate.ToShortDateString()</p>
 
     <hr />
-    <a href="/Home/Index">К списку сотрудников</a>
+    <a asp-controller="Employees" asp-action="Index">К списку сотрудников</a>
 
 </body>
 </html>
