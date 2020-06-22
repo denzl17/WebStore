@@ -11,7 +11,7 @@
       "destination": "wwwroot/lib/font-awesome/"
     },
     {
-      "provider": "unpkg",
+      "provider": "jsdelivr",
       "library": "bootstrap@3.3.0",
       "destination": "wwwroot/lib/bootstrap/",
       "files": [
@@ -29,10 +29,6 @@
         "dist/js/bootstrap.min.js",
         "dist/js/npm.js"
       ]
-    },
-    {
-      "library": "prettyPhoto@3.1.6",
-      "destination": "wwwroot/lib/prettyPhoto/"
     }
   ]
 }
