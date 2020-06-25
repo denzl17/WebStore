@@ -22,6 +22,8 @@ namespace WebStore.Controllers
         //[Route("List")]
         public IActionResult Index() => View(_EmployeesData.Get());
 
+        //[Route("{id}")]
+        //[Authorize]
         public IActionResult EmployeeDetails(int id)
         {
             var employee = _EmployeesData.GetById(id);
