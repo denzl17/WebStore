@@ -1,4 +1,4 @@
-﻿@model EmployeeViewModel
+﻿@model WebStore.Domain.ViewModels.EmployeeViewModel
 
 @{
     ViewData["Title"] = "Редактирование сотрудника id:" + Model.Id;
@@ -8,10 +8,19 @@
     <h3>@ViewData["Title"]</h3>
     <hr/>
        
+    @*@using (Html.BeginForm("Edit", "Employees", FormMethod.Post))
+    {
+
+    }*@
+    
+    @*@Html.EditorForModel()*@
+
     <form asp-controller="Employees" asp-action="Edit" method="post">
         <div class="row">
             <div class="col-md-4">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                @*@Html.EditorFor(m => m.Id)*@
 
                 <input asp-for="Id" type="hidden" />
 
