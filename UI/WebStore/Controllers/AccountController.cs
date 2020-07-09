@@ -31,6 +31,7 @@ namespace WebStore.Controllers
         {
             if (!ModelState.IsValid) return View(Model);
 
+
             var user = new User
             {
                 UserName = Model.UserName
