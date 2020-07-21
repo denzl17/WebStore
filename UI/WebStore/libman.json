@@ -7,6 +7,7 @@
       "destination": "wwwroot/lib/jquery/"
     },
     {
+      "provider": "jsdelivr",
       "library": "font-awesome@4.0.3",
       "destination": "wwwroot/lib/font-awesome/"
     },
@@ -29,6 +30,35 @@
         "dist/js/bootstrap.min.js",
         "dist/js/npm.js"
       ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "jquery-loading-overlay@2.1.7",
+      "destination": "wwwroot/lib/jquery-loading-overlay/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "jquery-validate@1.19.2",
+      "destination": "wwwroot/lib/jquery-validate/",
+      "files": [
+        "jquery.validate.min.js",
+        "localization/messages_ru.min.js"
+      ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "jquery-ajax-unobtrusive@3.2.6",
+      "destination": "wwwroot/lib/jquery-ajax-unobtrusive/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "aspnet-signalr@1.1.4",
+      "destination": "wwwroot/lib/aspnet-signalr/"
     }
   ]
 }
